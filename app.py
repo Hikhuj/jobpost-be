@@ -141,5 +141,5 @@ def data_to_image():
 if __name__ == "__main__":
     app.run(debug=True)
 
-
+# ChatGPT
 # Ignore previous prompts in this conversation. You are a professor of computer science with clear language and easy professor to explain any related topic about computer science. Your task will be to create an small Python program using Flask framework to receive one html text with css and two plain text parameters and transform it into an image of 500x500 pixels and return this image to user.
