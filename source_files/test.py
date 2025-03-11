@@ -145,7 +145,7 @@ if __name__ == "__main__":
     Job_description = "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus."
     Recruiter_contact = """Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas 
     nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus."""
-    
+
     script_dir = os.path.dirname(os.path.abspath(__file__))
     print(f"Localizacion del proyecto {script_dir}")
     background_image = "img/template.png"

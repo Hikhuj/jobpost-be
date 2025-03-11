@@ -60,7 +60,7 @@ def html_to_image(html_content, output_path):
         'encoding': "UTF-8",
         'quality': '100'
     }
-    
+
     # Generate the image from the HTML content
     imgkit.from_string(html_content, output_path, options=options, config=config)
 
@@ -73,13 +73,13 @@ if __name__ == "__main__":
 
     # Generate HTML content
     html_content = generate_html(names_list, title, date)
-    
+
     # Output image path
     output_image_path = "harvard_acceptance_list.png"
-    
+
     # Convert HTML to image
     html_to_image(html_content, output_image_path)
-    
+
     print(f"Image saved to {output_image_path}")
 
 

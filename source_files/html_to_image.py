@@ -19,4 +19,3 @@ def html_to_image(html_content, output_path, width=500, height=500):
     }
     # Convert HTML to image
     imgkit.from_string(html_content, output_path, options=options)
-

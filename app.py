@@ -1,106 +1,9 @@
-<<<<<<< HEAD
-import os
-import imgkit
-from flask import Flask, jsonify, request, json
-=======
 from flask import Flask, jsonify, request
->>>>>>> 40c6c097fa65cdeee6d20c0f6f2375899c01853e
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
 
-<<<<<<< HEAD
-# allow request from the FE 
-CORS(app, resources={r"/data_to_image": {"origins": "http://127.0.0.1:5000"}})
-
-# App entry point
-@app.route("/")
-def home():
-    return jsonify({"message": "Hello, world!"})
-
-# Send the data from form
-@app.route("/data_to_image", methods=["POST"])
-def data_to_image():
-    try:
-        if not request.is_json:
-            return jsonify({"error": "Request must be in JSON format"}), 400
-
-        # If ok lets parse the JSON data
-        data = request.get_json()
-        job_title = data["job_title"]
-        job_description = data["job_description"]
-        requirements = data["requirements"]
-        recruiter_contact = data["recruiter_contact"]
-
-        if not job_title or not job_description or not requirements or not recruiter_contact:
-            return jsonify({"error": "Not all parameters were sent"}), 400
-
-        # Output path for the image we export
-        output_path = "output.png"
-
-
-        # Make call with parameters to main function
-        response = converter_data_to_image(output_path, job_title, job_description, requirements, recruiter_contact)
-
-        # Return answer
-        # return send_file(output_path, mimetype="image/png")
-
-        # We are going to return a file or image to user
-        return jsonify({"message": "All data ok"}), 200
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-def converter_data_to_image(output_path, job_title, job_description, requirements, recruiter_contact):
-    html_content = generate_html(job_title, job_description, requirements, recruiter_contact)
-    return html_to_image(html_content, output_path, 500, 500)
-
-
-def generate_html(job_title, job_description, requirements, recruiter_contact):
-    """
-    Generate HTML sting with different variables
-    """
-    return f"""
-    <html>
-        <head>
-            <style>
-                body {{
-                    font-family: Arial, sans-serif;
-                    text-align: center;
-                }}
-                .section {{
-                    margin: 20px;
-                }}
-            </style>
-        </head>
-        <body>
-            <div class="section">
-                <h1>We are hiring!</h1>
-            </div>
-            <div class="section">
-                <h2>Job Title</h2>
-                <p>{job_title}</p>
-            </div>
-            <div class="section">
-                <h2>Job Description</h2>
-                <p>{job_description}</p> b
-                ''
-            </div>
-            <div class="section">
-                <h2>Requirements</h2>
-                <p>{requirements}</p>
-            </div>
-            <div class="section">
-                <h2>Recruiter Contact</h2>
-                <p>{recriter_contact}</p>
-            </div>
-        </body>
-    </html>
-    """
-
-def html_to_image(html_content, output_path, width=1000, height=1000):
-=======
 # Allow request from the FE
 # In case does not work as expected, uncomment this line
 # CORS(app, resources={r"/text_to_image": {"origins": "http://localhost:8000"}})
@@ -125,21 +28,11 @@ def text_to_image(data, option=1):
 
 
 def html_to_image():
->>>>>>> 40c6c097fa65cdeee6d20c0f6f2375899c01853e
     # Setting options to set new image required
     options = {
         'format': 'png',
         'width': width,
         'height': height,
-<<<<<<< HEAD
-        'encoding': "UTF-8",
-        'quality': '100'
-    }
-
-    # Convert HTML to Image
-    imgkit.from_string(html_content, output_path, options=options)
-
-=======
         'encoding': 'UTF-8',
         'quality': '100',
     }
@@ -267,7 +160,6 @@ def generate_html(requirements, job_description, recruiter_contact):
     """
 
     return html_content
->>>>>>> 40c6c097fa65cdeee6d20c0f6f2375899c01853e
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)

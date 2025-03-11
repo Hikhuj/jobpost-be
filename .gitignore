@@ -2,7 +2,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-.DS_Store
 
 # C extensions
 *.so
@@ -141,6 +140,11 @@ venv.bak/
 # mkdocs documentation
 /site
 
+other files
+.psd
+.ai
+/sourceFiles
+
 # mypy
 .mypy_cache/
 .dmypy.json
@@ -154,6 +158,9 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Apple files from MAC OS
+.DS_Store
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can

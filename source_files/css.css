@@ -1,78 +1,79 @@
-    
-#g-Positions-box ,
+#g-Positions-box,
 #g-Positions-box .g-artboard {
-    margin:0 auto;
+  margin: 0 auto;
 }
 #g-Positions-box p {
-    margin:0;
+  margin: 0;
 }
 #g-Positions-box .g-aiAbs {
-    position:absolute;
+  position: absolute;
 }
 #g-Positions-box .g-aiImg {
-    position:absolute;
-    top:0;
-    display:block;
-    width:100% !important;
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100% !important;
 }
 #g-Positions-box .g-aiSymbol {
-    position: absolute;
-    box-sizing: border-box;
+  position: absolute;
+  box-sizing: border-box;
 }
-#g-Positions-box .g-aiPointText p { white-space: nowrap; }
+#g-Positions-box .g-aiPointText p {
+  white-space: nowrap;
+}
 #g-Positions-Mesa_de_trabajo_1 {
-    position:relative;
-    overflow:hidden;
+  position: relative;
+  overflow: hidden;
 }
 #g-Positions-Mesa_de_trabajo_1 p {
-    font-weight:regular;
-    line-height:24px;
-    height:auto;
-    opacity:1;
-    letter-spacing:0em;
-    font-size:20px;
-    text-align:left;
-    color:rgb(0,0,0);
-    text-transform:none;
-    padding-bottom:0;
-    padding-top:0;
-    mix-blend-mode:normal;
-    font-style:normal;
-    position:static;
+  font-weight: regular;
+  line-height: 24px;
+  height: auto;
+  opacity: 1;
+  letter-spacing: 0em;
+  font-size: 20px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  text-transform: none;
+  padding-bottom: 0;
+  padding-top: 0;
+  mix-blend-mode: normal;
+  font-style: normal;
+  position: static;
 }
 #g-Positions-Mesa_de_trabajo_1 .g-pstyle0 {
-    font-weight:500;
-    line-height:75px;
-    height:75px;
-    letter-spacing:-0.05em;
-    font-size:89px;
+  font-weight: 500;
+  line-height: 75px;
+  height: 75px;
+  letter-spacing: -0.05em;
+  font-size: 89px;
 }
 #g-Positions-Mesa_de_trabajo_1 .g-pstyle1 {
-    font-weight:500;
-    line-height:75px;
-    height:75px;
-    letter-spacing:-0.05em;
-    font-size:89px;
-    color:rgb(255,255,255);
+  font-weight: 500;
+  line-height: 75px;
+  height: 75px;
+  letter-spacing: -0.05em;
+  font-size: 89px;
+  color: rgb(255, 255, 255);
 }
 #g-Positions-Mesa_de_trabajo_1 .g-pstyle2 {
-    font-weight:500;
-    line-height:48px;
-    height:48px;
-    font-size:40px;
-    color:rgb(247,240,240);
+  font-weight: 500;
+  line-height: 48px;
+  height: 48px;
+  font-size: 40px;
+  color: rgb(247, 240, 240);
 }
 #g-Positions-Mesa_de_trabajo_1 .g-pstyle3 {
-    font-weight:700;
-    height:24px;
+  font-weight: 700;
+  height: 24px;
 }
 #g-Positions-Mesa_de_trabajo_1 .g-pstyle4 {
-    font-weight:500;
-    height:24px;
+  font-weight: 500;
+  height: 24px;
 }
 #g-Positions-Mesa_de_trabajo_1 .g-cstyle0 {
-    color:rgb(0,0,0);
+  color: rgb(0, 0, 0);
 }
 #g-Positions-Mesa_de_trabajo_1 .g-cstyle1 {
-    font-weight:700;
+  font-weight: 700;
 }
