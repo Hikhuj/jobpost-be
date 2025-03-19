@@ -2,8 +2,8 @@
 
 - Required to use Python v.3
 - Create virtual ENV with venv (https://flask.palletsprojects.com/en/3.0.x/installation/)
-    [code]python3 -m venv <directory>
-    [code]python3 -m venv .venv (mostly common name)
+    [code]python3 -m venv <directory>[/code]
+    [code]python3 -m venv .venv (mostly common name)[/code]
 
 - To start the Python Venv (two methods)
     [code]. .venv/bin/activate[/code]
